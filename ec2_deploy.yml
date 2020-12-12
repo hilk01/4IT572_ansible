@@ -4,9 +4,6 @@ name: Deploy to EC2
 
 tasks:
   - name: launch EC2 instance
-    ec2
-    ta
-    :
       instance_type: t2.micro
       image: ami-06451a6f16cf2d02d
       region: us-east-1
