@@ -1,6 +1,6 @@
- -  name: Deploy to EC2
-    hosts: localhost
-    connection: local
+  -  name: Deploy to EC2
+     hosts: localhost
+     connection: local
 
 tasks:
   - name: launch EC2 instance
@@ -12,6 +12,7 @@ tasks:
       assign_public_ip: yes
       wait: yes
       count: 2
+
       aws_access_key: "{{access_key}}"
       aws_secret_key: "{{secret_key}}"
       security_token: "{{session_token}}"
