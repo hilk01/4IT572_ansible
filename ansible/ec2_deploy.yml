@@ -1,5 +1,5 @@
 - name: Deploy to ec2
-  hosts: all
+  hosts: localhost
   connection: local
 
 - tasks:
